@@ -6,10 +6,30 @@
              xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
              mc:Ignorable="d"
     d:DesignHeight="500" d:DesignWidth="500" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
-             VerticalContentAlignment="Stretch">
+             VerticalContentAlignment="Stretch" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit">
 
     <Grid x:Name="LayoutRoot" Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-        <ContentControl prism:RegionManager.RegionName="MainRegion" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
-             VerticalContentAlignment="Stretch"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="433*" />
+            <RowDefinition Height="27*" />
+        </Grid.RowDefinitions>
+        <sdk:TabControl prism:RegionManager.RegionName="MainRegion" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                            HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"     Name="tabControl1" >
+            <prism:TabControlRegionAdapter.ItemContainerStyle>
+                <Style TargetType="sdk:TabItem">
+                    <Setter Property="HeaderTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding HeaderInfo}" />
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </prism:TabControlRegionAdapter.ItemContainerStyle>
+            <sdk:TabItem></sdk:TabItem>
+        </sdk:TabControl>
     </Grid>
 </UserControl>
+
+

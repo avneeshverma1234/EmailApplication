@@ -69,7 +69,7 @@
       <HintPath>..\Libraries\Prism4\Silverlight\Microsoft.Practices.Prism.MefExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
-      <HintPath>..\..\EmailApp\Libraries\Prism4\Silverlight\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+      <HintPath>..\Libraries\Prism4\Silverlight\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\Libraries\Prism4\Silverlight\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -90,6 +90,7 @@
     <Reference Include="system" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
@@ -117,6 +118,10 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailDashboard.EmailAccounts\EmailDashboard.EmailAccounts.csproj">
+      <Project>{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}</Project>
+      <Name>EmailDashboard.EmailAccounts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EmailDashboard.Facade.Interfaces\EmailDashboard.Facade.Interfaces.csproj">
       <Project>{9379BB95-2E00-4BE9-94C9-C65977112CBD}</Project>
       <Name>EmailDashboard.Facade.Interfaces</Name>

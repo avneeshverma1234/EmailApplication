@@ -16,12 +16,6 @@ namespace EmailDashboard.Facade
         {
             LoginParameters loginParameters = new LoginParameters(userName, password);
             WebContextBase.Current.Authentication.Login(loginParameters,loginOperation_Completed,onCompleted);
-          /*loginOperation.Completed += new System.EventHandler(loginOperation_Completed);
-            while (!loginOperation.IsCanceled || !loginOperation.IsComplete || !loginOperation.IsErrorHandled)
-            {
-                Thread.Sleep(5000);      
-            }
-            return isSuccessful;*/
         }
 
         private void loginOperation_Completed(LoginOperation loginOperation)

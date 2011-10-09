@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Facade", "Em
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Facade.Interfaces", "EmailDashboard.Facade.Interfaces\EmailDashboard.Facade.Interfaces.csproj", "{9379BB95-2E00-4BE9-94C9-C65977112CBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Infrastructure", "EmailDashboard.Infrastructure\EmailDashboard.Infrastructure.csproj", "{82DD8312-E2DD-4342-AE5B-6DD059F5A728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.EmailAccounts", "EmailDashboard.EmailAccounts\EmailDashboard.EmailAccounts.csproj", "{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +62,14 @@ Global
 		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DD8312-E2DD-4342-AE5B-6DD059F5A728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DD8312-E2DD-4342-AE5B-6DD059F5A728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DD8312-E2DD-4342-AE5B-6DD059F5A728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DD8312-E2DD-4342-AE5B-6DD059F5A728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5FACC1-9CAE-4EF2-9419-1E4683825AEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

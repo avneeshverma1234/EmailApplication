@@ -1,5 +1,6 @@
 ﻿
 using System.Windows;
+using EmailDashboard.EmailAccounts;
 using EmailDashboard.Facade;
 using EmailDashboard.Facade.Interfaces;
 using EmailDashboard.Login;
@@ -9,6 +10,7 @@ using Microsoft.Practices.Unity;
 
 namespace EmailDashboard
 {
+   
     public class Bootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
@@ -39,7 +41,8 @@ namespace EmailDashboard
 
             ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
             moduleCatalog.AddModule(typeof(LoginModule));
-        }
+            moduleCatalog.AddModule(typeof(EmailAccountModule));
+         }
 
 
     }
