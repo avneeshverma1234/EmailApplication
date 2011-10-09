@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.ServiceModel.DomainServices.Client;
+using System.ServiceModel.DomainServices.Client.ApplicationServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -9,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using EmailDashboard.Web.Services.Authentication;
 
 namespace EmailDashboard
 {
@@ -22,6 +25,12 @@ namespace EmailDashboard
             this.UnhandledException += this.Application_UnhandledException;
 
             InitializeComponent();
+            WebContext webcontext = new WebContext();
+            FormsAuthentication formsAuthentication = new System.ServiceModel.DomainServices.Client.ApplicationServices.FormsAuthentication();
+            formsAuthentication.DomainContext = new AuthenticationContext();
+            webcontext.Authentication = formsAuthentication; 
+            
+            this.ApplicationLifetimeObjects.Add(webcontext);
         }
 
         private void Application_Startup(object sender, StartupEventArgs e)

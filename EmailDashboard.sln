@@ -2,10 +2,27 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard", "EmailDashboard\EmailDashboard.csproj", "{A13F975B-D509-4F6D-A403-303DD442E641}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE0C7DD3-78D8-4A3B-AAFB-44583237DE28} = {BE0C7DD3-78D8-4A3B-AAFB-44583237DE28}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Web", "EmailDashboard.Web\EmailDashboard.Web.csproj", "{BE0C7DD3-78D8-4A3B-AAFB-44583237DE28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Login", "EmailDashboard.Login\EmailDashboard.Login.csproj", "{E6EE5FE1-B69E-484C-B0F8-4AE3E16C5DC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE0C7DD3-78D8-4A3B-AAFB-44583237DE28} = {BE0C7DD3-78D8-4A3B-AAFB-44583237DE28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Domain", "EmailDashboard.Domain\EmailDashboard.Domain.csproj", "{4B5A597E-61D6-4CC0-84DD-74DBFAD5FF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Domain.Interfaces", "EmailDashboard.Domain.Interfaces\EmailDashboard.Domain.Interfaces.csproj", "{A84D4D76-0D79-42C4-B24D-1A08DF3D6B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Facade", "EmailDashboard.Facade\EmailDashboard.Facade.csproj", "{F7C5B14C-2C43-46E8-ACD3-009170C107D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE0C7DD3-78D8-4A3B-AAFB-44583237DE28} = {BE0C7DD3-78D8-4A3B-AAFB-44583237DE28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailDashboard.Facade.Interfaces", "EmailDashboard.Facade.Interfaces\EmailDashboard.Facade.Interfaces.csproj", "{9379BB95-2E00-4BE9-94C9-C65977112CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +42,22 @@ Global
 		{E6EE5FE1-B69E-484C-B0F8-4AE3E16C5DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6EE5FE1-B69E-484C-B0F8-4AE3E16C5DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6EE5FE1-B69E-484C-B0F8-4AE3E16C5DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5A597E-61D6-4CC0-84DD-74DBFAD5FF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5A597E-61D6-4CC0-84DD-74DBFAD5FF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5A597E-61D6-4CC0-84DD-74DBFAD5FF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5A597E-61D6-4CC0-84DD-74DBFAD5FF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84D4D76-0D79-42C4-B24D-1A08DF3D6B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84D4D76-0D79-42C4-B24D-1A08DF3D6B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84D4D76-0D79-42C4-B24D-1A08DF3D6B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84D4D76-0D79-42C4-B24D-1A08DF3D6B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C5B14C-2C43-46E8-ACD3-009170C107D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C5B14C-2C43-46E8-ACD3-009170C107D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C5B14C-2C43-46E8-ACD3-009170C107D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C5B14C-2C43-46E8-ACD3-009170C107D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9379BB95-2E00-4BE9-94C9-C65977112CBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,8 +29,7 @@
     <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
     <UsePlatformExtensions>false</UsePlatformExtensions>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
-    <LinkedServerProject>
-    </LinkedServerProject>
+    <LinkedServerProject>..\EmailDashboard.Web\EmailDashboard.Web.csproj</LinkedServerProject>
   </PropertyGroup>
   <!-- This property group is only here to support building this project using the 
        MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
@@ -81,6 +80,12 @@
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.Composition, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.Composition.Initialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
@@ -112,6 +117,14 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailDashboard.Facade.Interfaces\EmailDashboard.Facade.Interfaces.csproj">
+      <Project>{9379BB95-2E00-4BE9-94C9-C65977112CBD}</Project>
+      <Name>EmailDashboard.Facade.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmailDashboard.Facade\EmailDashboard.Facade.csproj">
+      <Project>{F7C5B14C-2C43-46E8-ACD3-009170C107D9}</Project>
+      <Name>EmailDashboard.Facade</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EmailDashboard.Login\EmailDashboard.Login.csproj">
       <Project>{E6EE5FE1-B69E-484C-B0F8-4AE3E16C5DC8}</Project>
       <Name>EmailDashboard.Login</Name>
